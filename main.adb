@@ -10,5 +10,9 @@ procedure Main is
    Meow : Integer := 5;
 begin
    Meow := 6;
-   Put_Line("Hello Ada!" & Integer'Image(Meow));
+   if Meow = 5 then
+      Put_Line("Kij ci w oko");
+   else
+      Put_Line("Hello Ada!" & Integer'Image(Meow));
+   end if;
 end Main;
