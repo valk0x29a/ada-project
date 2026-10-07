@@ -9,6 +9,16 @@ procedure Main is
    end record;
    Meow : Integer := 5;
    Test : Date;
+   task Robot;
+   task body Robot is
+   begin
+      Put_Line("Robot rozpoczyna pracę");
+   for I in 1 .. 5 loop
+      Put_Line("Robot pracuje");
+      delay 1.0;
+   end loop;
+   Put_Line("Robot kończy pracę");
+   end Robot;
 begin
    Test.Day := 20;
    Meow := 6;
